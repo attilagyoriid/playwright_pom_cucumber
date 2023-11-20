@@ -3,10 +3,26 @@
   "version": "1.0.0",
   "description": "Palaywright framework with page object model and cucumber",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["playwright", "cucumber", "automation", "pom", "page object model"],
+  "scripts": {},
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "automation",
+    "pom",
+    "page object model"
+  ],
   "author": "Attila Gyori",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.2",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
 }
