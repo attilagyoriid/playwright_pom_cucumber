@@ -1,0 +1,12 @@
+{
+  "name": "playwright_pom_cucumber",
+  "version": "1.0.0",
+  "description": "Palaywright framework with page object model and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["playwright", "cucumber", "automation", "pom", "page object model"],
+  "author": "Attila Gyori",
+  "license": "ISC"
+}
