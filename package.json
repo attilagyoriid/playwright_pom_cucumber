@@ -17,7 +17,9 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
     "@playwright/test": "^1.40.0",
+    "@types/cucumber": "^7.0.0",
     "@types/node": "^20.9.2",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
