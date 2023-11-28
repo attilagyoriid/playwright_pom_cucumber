@@ -6,7 +6,7 @@ module.exports = {
     },
     paths: ['features/'],
     publishQuiet: true,
-    dryRun: false,
+    dryRun: true,
     require: ['features/steps/*.ts', 'framework/hooks/hooks.ts'],
     requireModule: ['ts-node/register'],
     format: [

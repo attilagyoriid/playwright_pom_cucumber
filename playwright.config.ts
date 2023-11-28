@@ -33,8 +33,13 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'chromium-cucumber',
       use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'chromium-native-pw',
+      use: { ...devices['Desktop Chrome'] },
+      testDir: './tests-native-pw',
     },
 
     {

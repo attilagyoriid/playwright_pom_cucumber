@@ -4,7 +4,7 @@
   "description": "Palaywright framework with page object model and cucumber",
   "main": "index.js",
   "scripts": {
-    "test:basic": "cucumber-js test --config=config/cucumber.js"
+    "test:bdd:basic": "cucumber-js test --config=config/cucumber.js"
   },
   "keywords": [
     "playwright",
