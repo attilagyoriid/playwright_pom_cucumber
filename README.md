@@ -4,7 +4,7 @@
 - Email: gyoriattila@yahoo.com
 - Website: https://attila-gyori.com
 
-<img src="https://images.app.goo.gl/5tNgUntLcu3uPFaQ9" alt="exemplo imagem">
+![Playwright](assets/playwright.png)
 
 > Playwright 1.4+ with Cucumber, Page Object Model, Allure report project.
 
