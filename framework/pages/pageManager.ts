@@ -1,33 +1,22 @@
-import { Page, expect } from "@playwright/test";
-import { NavigationPage } from '../page-objects/navigationPage'
-import { FormLayoutsPage } from '../page-objects/formLayoutsPage'
-import { DatepickerPage } from '../page-objects/datepickerPage'
+import { Page } from '@playwright/test';
+import { FormLayoutsPage } from '@pages/formLayoutsPage';
+import { SidebarComponent } from '@pages/components/sidebarComponent';
+import { BasePage } from './basePage';
 
+export class PageManager extends BasePage {
+  private readonly _formLayoutsPage: FormLayoutsPage;
+  private readonly _sidebarComponent: SidebarComponent;
 
-export class PageManager{
+  constructor(page: Page) {
+    super(page);
+    this._formLayoutsPage = new FormLayoutsPage(this.page);
+    this._sidebarComponent = new SidebarComponent(this.page);
+  }
 
-    private readonly page: Page
-    private readonly navigationPage: NavigationPage
-    private readonly formLayoutsPage: FormLayoutsPage
-    private readonly datepickerPage: DatepickerPage
-
-    constructor(page: Page){
-        this.page = page
-        this.navigationPage = new NavigationPage(this.page)
-        this.formLayoutsPage = new FormLayoutsPage(this.page)
-        this.datepickerPage = new DatepickerPage(this.page)
-    }
-
-    navigateTo(){
-        return this.navigationPage
-    }
-
-    onFormLayoutsPage(){
-        return this.formLayoutsPage
-    }
-
-    onDatepickerPage(){
-        return this.datepickerPage
-    }
-
+  get formLayoutsPage() {
+    return this._formLayoutsPage;
+  }
+  get sidebarComponent() {
+    return this._sidebarComponent;
+  }
 }
