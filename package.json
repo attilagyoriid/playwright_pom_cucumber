@@ -6,6 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cd system-under-test && npm run start",
+    "test:pom:chrome": "npx playwright test usePageObjects.spec.ts --project=chromium",
     "test:bdd:basic": "cucumber-js test --config=framework/config/cucumber.js"
   },
   "keywords": [
