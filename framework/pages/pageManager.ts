@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
-import { FormLayoutsPage } from '@pages/formLayoutsPage';
-import { SidebarComponent } from '@pages/components/sidebarComponent';
+import { FormLayoutsPage } from '../pages/formLayoutsPage';
+import { SidebarComponent } from '../pages/components/sidebarComponent';
 import { BasePage } from './basePage';
 
 export class PageManager extends BasePage {

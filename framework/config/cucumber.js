@@ -5,8 +5,8 @@ module.exports = {
       snippetInterface: 'async-await',
     },
     paths: ['features/'],
-    publishQuiet: true,
-    dryRun: true,
+    publishQuiet: false,
+    dryRun: false,
     require: ['features/steps/*.ts', 'framework/hooks/hooks.ts'],
     requireModule: ['ts-node/register'],
     format: [

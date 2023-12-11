@@ -5,7 +5,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["framework/pages/*"]
+      "@pages/*": ["framework/pages/*"],
+      "@hooks/*": ["framework/hooks/*"]
     }
   }
 }

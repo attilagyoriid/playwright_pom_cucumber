@@ -5,6 +5,7 @@ import { invokeBrowser } from '../browsers/browserManager';
 import { getEnv } from '../config/env/env';
 import { createLogger } from 'winston';
 import { options } from '../logger/logger';
+import { PageManager } from '../pages/pageManager';
 const fs = require('fs-extra');
 
 let browser: Browser;
@@ -31,6 +32,7 @@ Before({ tags: 'not @auth' }, async function ({ pickle }) {
   });
   const page = await context.newPage();
   fixture.page = page;
+  fixture.pageManager = new PageManager(fixture.page);
   fixture.logger = createLogger(options(scenarioName));
 });
 

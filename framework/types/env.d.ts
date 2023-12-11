@@ -7,7 +7,6 @@ declare global {
       ENV: 'staging' | 'prod' | 'test';
       BASEURL: string;
       HEAD: 'true' | 'false';
-      HEADLESS: boolean;
     }
   }
 }
