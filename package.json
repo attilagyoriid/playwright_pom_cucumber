@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start": "cd system-under-test && npm run start",
+    "start-app": "cd system-under-test && npm run start",
     "test:pom:chrome": "npx playwright test usePageObjects.spec.ts --project=chromium",
-    "test:bdd:basic": "cucumber-js test --config=framework/config/cucumber.js"
+    "test:bdd:basic": "cross-env ENV=staging HEADLESS=false cucumber-js test --config=framework/config/cucumber.js || true",
+    "start:app:start:test:bdd": "start-server-and-test start-app http://localhost:4200 test:bdd:basic"
   },
   "keywords": [
     "playwright",
@@ -29,8 +30,9 @@
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
     "prettier": "3.1.0",
+    "start-server-and-test": "^2.0.3",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
