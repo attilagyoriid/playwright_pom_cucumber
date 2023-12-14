@@ -17,4 +17,5 @@ test('form fill', async ({ pageManager }) => {
   await expect(
     pageManager.formLayoutsPage.girdFormRadioBtnLocator.locator(`:text-is("${expectedOptionText}")`)
   ).toBeChecked();
+  expect(await pageManager.formLayoutsPage.gridFormLocator.screenshot()).toMatchSnapshot();
 });
